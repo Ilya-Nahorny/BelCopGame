@@ -1,16 +1,3 @@
- 
- 
-
- 
-
- 
- 
- 
-
- 
-
-
- 
  //************* игра*********************
  var gameWrapper = document.createElement('div');
  body.appendChild(gameWrapper);
