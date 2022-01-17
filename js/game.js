@@ -82,6 +82,8 @@
      };
  });
  
+
+ 
  document.addEventListener('keyup',  function(event){
      if(event.keyCode == '39') isMentMove = false;
      if(event.keyCode == '32') isAttack = false;
