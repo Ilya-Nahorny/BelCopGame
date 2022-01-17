@@ -1,11 +1,12 @@
  //************* игра*********************
+ const body = document.querySelector('body')
  var gameWrapper = document.createElement('div');
  body.appendChild(gameWrapper);
  var canvas = document.createElement('canvas');
  gameWrapper.appendChild(canvas);
  var ctx = canvas.getContext('2d');
- canvas.width = window.innerWidth;
- canvas.height = window.innerHeight;
+//  canvas.width = window.innerWidth;
+//  canvas.height = window.innerHeight;
  
  var attckSound = new Audio('sound/attack.mp3');
  var soundOfPunch = new Audio('sound/punch.mp3');
@@ -71,7 +72,7 @@
      if(event.keyCode == '27') {
          startMenuWrapper.style.cssText = `overflow:hidden;
                                              margin:0; 
-                                             background:url('img/fon.jpg') no-repeat center top;
+                                             background:url('img/2.jpg') no-repeat center top;
                                              background-size:cover; 
                                              height:100vh;
                                              width: 100vw;`;
@@ -99,7 +100,7 @@
  
  function resize(){
      canvas.width  = window.innerWidth;
-     canvas.height = window.innerHeight;
+     canvas.height = 768;
  };
  
  function mentMove(){
@@ -292,7 +293,7 @@
      };
  };
  
- 
+
  //************* функция отрисовки игры **********
  function render(){
      ctx.drawImage(fonimg, 0, 0, fonimg.width, fonimg.height, fon.x, 0,fonimg.width*2, canvas.height);

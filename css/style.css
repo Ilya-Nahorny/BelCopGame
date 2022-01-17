@@ -1,0 +1,126 @@
+@media (max-height: 1300px) {
+  canvas {
+    height: 1200px;
+  }
+}
+@media (max-height: 1200px) {
+  canvas {
+    height: 1100px;
+  }
+}
+@media (max-height: 1100px) {
+  canvas {
+    height: 1000px;
+  }
+}
+@media (max-height: 1000px) {
+  canvas {
+    height: 900px;
+  }
+}
+@media (max-height: 900px) {
+  canvas {
+    height: 800px;
+  }
+}
+@media (max-height: 800px) {
+  canvas {
+    height: 700px;
+  }
+}
+@media (max-height: 700px) {
+  canvas {
+    height: 600px;
+  }
+}
+@media (max-height: 600px) {
+  canvas {
+    height: 500px;
+  }
+}
+@media (max-height: 500px) {
+  canvas {
+    height: 400px;
+  }
+}
+@media (max-height: 400px) {
+  canvas {
+    height: 300px;
+  }
+}
+body{
+  overflow: hidden;
+
+}
+
+.start-menu {
+  background-image: url(../img/2.jpg);
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body nav {
+  position: relative;
+  width: 100vw;
+  top: 60px;
+}
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100vw;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  body nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+body nav ul li a {
+  text-decoration: none;
+  position: relative;
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(221, 221, 221, 0.788);
+  text-shadow: 2px 2px 4px black, 0px 0px 20px white;
+}
+body nav ul li a:before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: url(../img/kura.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -180px;
+  top: -50px;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body nav ul li a:hover:before {
+  opacity: 1;
+}

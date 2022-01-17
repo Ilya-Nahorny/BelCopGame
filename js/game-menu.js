@@ -1,6 +1,6 @@
 //************* Стартовое меню*********************
 
-var body = document.querySelector('body');
+/* var body = document.querySelector('body');
 body.style.cssText = `overflow:hidden;
                         margin:0; 
                                  `;
@@ -46,9 +46,9 @@ container.style.cssText = `background: url('img/cop-stop.png') left bottom no-re
                             height:100vh;
                             width:30vw;
                             bottom:-10%; `;
-startMenuWrapper.appendChild(container);
+startMenuWrapper.appendChild(container); */
 
-//***************описание функции для параллакс эфекта*********
+/* //***************описание функции для параллакс эфекта*********
 function parallax(event) {
 this.querySelectorAll('.layer').forEach(function(layer){
     let speed = layer.getAttribute('data-speed');
@@ -56,13 +56,13 @@ this.querySelectorAll('.layer').forEach(function(layer){
 
 
 });
-};
+}; */
 
-//***************Добавление слушателя события "движение мыши" ********
-document.addEventListener('mousemove', parallax);
+/* //***************Добавление слушателя события "движение мыши" ********
+document.addEventListener('mousemove', parallax); */
 
 //***************обёртка для стартовых кнопок
-let btnWrap = document.createElement('div');
+/* let btnWrap = document.createElement('div');
 startMenuWrapper.appendChild(btnWrap);
 btnWrap.style.cssText = `display: flex;
                     justify-content: left;
@@ -150,15 +150,20 @@ let resultAndRulesWrapStyle = `display: flex;
  inputs.forEach(function(element){
      element.addEventListener('mouseover', mouseOver );
      element.addEventListener('mouseout', mouseOut);
- });
+ }); */
+
+
   //по нажатию на кнопку START
+
+  const startMenuWrapper = document.querySelector('.start-menu')
+  const startBtn = document.querySelector('.startBtn')
   startBtn.addEventListener('click', function(){
     startMenuWrapper.style.cssText = `display:none`;
     if(isSoundOff == false)soundTrack.play();
     if(isPaused == false)game();
     if(isPaused == true)togglePause();
 });
- //по нажатию  на кнопку results
+/*  //по нажатию  на кнопку results
  reultsBtn.addEventListener('click', function(){
     btnWrap.style.cssText = `display: none;
                             justify-content: left;
@@ -193,7 +198,9 @@ howToPlayBtn.addEventListener('click',function(){
  // ****************results-menu*********
  var resultsWrapper = document.createElement('div');
  wrap.appendChild(resultsWrapper);
- resultsWrapper.style.cssText = `display: none;`       
+ resultsWrapper.style.cssText = `display: none;`        */
+
+
      //******Сортировка localStorage ****
  let resultsArray = [];
  for (let i = 0; i < localStorage.length; i++){
@@ -220,7 +227,7 @@ howToPlayBtn.addEventListener('click',function(){
  
   //********* how to play-menu **********
  
-  var howToPlayWrapper = document.createElement('div');
+  /* var howToPlayWrapper = document.createElement('div');
   wrap.appendChild(howToPlayWrapper);
   howToPlayWrapper.style.cssText = `display: none;`;
   howToPlayWrapper.innerHTML = `<div>
@@ -244,4 +251,4 @@ howToPlayBtn.addEventListener('click',function(){
           латинская 'S' - выключение/включение звука.</br>
           'esc'  - для выхода в основной меню.
       </p>
-  </div>`;
+  </div>`; */
